@@ -1,0 +1,654 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap');
+
+*{
+  font-family: 'Poppins', sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  transition: all .2s linear;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+/* ========================= HEADER ======================== */
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100px;
+  padding: 0 2rem;
+  position: fixed;
+  top: 0; left: 0;
+  z-index: 100;
+  transition: .8s;
+}
+
+
+header img{
+  width: 280px;
+  padding: 0;
+}
+
+header .navbar ul{
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+header .navbar ul li{
+  margin: 0 1.5rem;
+}
+
+header .navbar ul li a {
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: #022853;
+  transition: .8s;
+}
+
+header .navbar ul li a:hover{
+  color: #000000;
+}
+
+header .fa-bars{
+  color: #2e6aaf;
+  cursor: pointer;
+  font-size: 3rem;
+  display: none;
+}
+
+/* ====================== HOME ======================================== */
+
+.home{
+  min-height: 100vh;
+  width: 100vw;
+  background: linear-gradient(190deg, white, #1659a7, #040f13);
+  display: flex;
+  align-items: left;
+  padding: 0 12rem;
+  position: relative;
+  flex-flow: column;
+  justify-content: center;
+  text-align: left;
+  overflow: hidden;
+}
+ 
+.home .banner{
+  color: #fff;
+  font-size: 2.5rem;
+  text-shadow: 0 .3rem .5rem rgba(0,0,0,.3);
+}
+
+.home span{
+  color: #022853;
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.home .slogan{
+  color: #eee;
+  font-size: 1.7rem;
+  font-weight: 400;
+}
+
+/* =================== WAVE AND NUT ANIMATION ============================ */
+
+.home .wave{
+  position: absolute;
+  bottom: -.5rem;
+  left: 0;
+  height: 11rem;
+  width: 100%;
+  background: url(./Logos/wave.png);
+  background-size: 100rem 11rem;
+  background-repeat: repeat-x;
+  animation: waves 10s linear infinite;
+}
+
+.home .wave2{
+  animation-direction: reverse;
+  opacity: .2;
+}
+
+.home .wave3{
+  animation-duration: 4s;
+  opacity: .5;
+}
+
+@keyframes waves {
+  0%{
+    background-position-x: 0;
+  }
+  100%{
+    background-position-x: 100rem;
+  }
+}
+
+.home .fa-cog{
+  position: absolute;
+  font-size: 30rem;
+  opacity: .15;
+  color: rgb(255, 255, 255);
+  animation: rotate 10s linear infinite;
+}
+
+.home .nut1{
+  top: 10%; left: -15rem;
+}
+
+.home .nut2{
+  bottom: 23%; right: -13rem;
+  animation-direction: reverse;
+}
+
+@keyframes rotate {
+  100%{
+    transform: rotate(360deg);
+  } 
+}
+/* ========================= ABOUT ========================== */
+
+.about{
+	width: 100%;
+	min-height: 100vh;
+	background-color: #fff;
+}
+
+.container{
+	width: 80%;
+	display: block;
+	margin:auto;
+	padding-top: 100px;
+}
+
+.content-section{
+	float: left;
+	width: 55%;
+}
+
+.image-section{
+	float: right;
+	width: 40%;
+}
+
+.image-section img{
+	width: 100%;
+	height: auto;
+  background-color: #125bae3b;
+  border-radius: 50%;
+}
+
+.image-section1{
+	float: right;
+	width: 40%;
+}
+
+.image-section1 img{
+	width: 100%;
+	height: 20em;
+  padding: 2em 1em 1em 1em;
+  margin: 1em 2em;
+  border-radius: 20em;
+}
+
+.content-section .title{
+  color: #022853;
+	text-transform: uppercase;
+	font-size: 28px;
+}
+
+.content-section .content h3{
+	margin-top: 20px;
+  font-weight: 400;
+	color:#044da0;
+	font-size: 21px;
+}
+
+.content-section .content p{
+	margin-top: 10px;
+	font-family: sans-serif;
+	font-size: 18px;
+	line-height: 1.5;
+  color: #3d3d3d;
+}
+
+.content-section .content ul{
+	margin-top: 10px;
+	font-family: sans-serif;
+	font-size: 18px;
+	line-height: 1.5;
+  color: #291e1e;
+}
+
+.content-section .intro{
+  padding-top: 40px;
+}
+
+.content-section .intro h2{
+  font-weight: 500;
+  font-size: 20px;
+  color: #3d3d3d
+}
+
+.content-section .intro h3{
+  font-size: 16px;
+  font-weight: 500;
+  font-style: italic;
+  color: #3d3d3d
+}
+
+.content-section .intro span{
+  color: #044da0;
+}
+
+.content-section .social{
+	margin: 40px 40px;
+}
+
+.content-section .social i{
+	color:#000000;
+	font-size: 30px;
+	padding:0px 10px;
+}
+
+.content-section .social i:hover{
+	color: #044da0;
+    transition: .5s;
+}
+
+.content-section ul li{
+    display: flex;
+    padding: 1rem 0;
+}
+
+/* =================================== CALL TO ACTION ============================================= */
+.cta{
+  margin: 100px auto;
+  width: 100%;
+  height: fit-content;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7),
+  rgba(0, 0, 0, 0.7)), url(./Logos/black\ bg\ -\ horizontal.jpg);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  padding: 10px 0;
+}
+.cta h1{
+  color: white;
+  margin-bottom: 40px;
+  padding: 0%;
+  font-weight: 200;
+}
+.button {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 12px;
+  font-size: 13px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+/* transition effect on button */
+.button:hover {
+  border: 1px solid #fff;
+  background: #044da0;
+  transition: 0.5s;
+}
+
+/* ============================ CONTACT ============================ */
+
+.contact{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 40px;
+}
+.containers{
+  max-width: 800px;
+  background-color: #fff;
+  width: 800px;
+  padding: 25px 40px 10px 40px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,.2);
+}
+.containers .text{
+  text-align: center;
+  font-size: 35px;
+  font-weight: 500;
+  background: -webkit-linear-gradient(right, #022853, #3c81d1, #022853, #3c81d1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.containers form{
+  padding: 30px 0 0 0 ;
+}
+.containers form .form-row{
+  display: flex;
+  margin: 32px 0;
+}
+form .form-row .input-data{
+  width: 100%;
+  height: 40px;
+  margin: 0 20px;
+  position: relative;
+}
+form .form-row .textarea{
+  height: 70px;
+}
+.input-data input,
+.textarea textarea{
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: none;
+  font-size: 17px;
+  border-bottom: 2px solid rgba(0,0,0,.12);
+}
+.input-data input:focus ~ label, .textarea textarea:focus ~ label,
+.input-data input:valid ~ label, .textarea textarea:valid ~ label{
+  transform: translateY(-35px);
+  font-size: 14px;
+  color: #022853;
+}
+.textarea textarea{
+  resize: none;
+  padding-top: 10px;
+}
+.input-data label{
+  position: absolute;
+  pointer-events: none;
+  bottom: 10px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+.textarea label{
+  width: 100%;
+  bottom: 40px;
+  background: #fff;
+}
+.input-data .underline{
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+}
+.input-data .underline:before{
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: #3498db;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+.input-data input:focus ~ .underline:before,
+.input-data input:valid ~ .underline:before,
+.textarea textarea:focus ~ .underline:before,
+.textarea textarea:valid ~ .underline:before{
+  transform: scale(1);
+}
+.submit-btn .input-data{
+  overflow: hidden;
+  height: 45px!important;
+  width: 100%!important;
+}
+.submit-btn .input-data .inner{
+  height: 100%;
+  width: 300%;
+  position: absolute;
+  left: -100%;
+  background: -webkit-linear-gradient(right, #022853, #3c81d1, #022853, #3c81d1);
+  transition: all 0.4s;
+}
+.submit-btn .input-data:hover .inner{
+  left: 0;
+}
+.submit-btn .input-data input{
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+}
+form .error-text{
+  position: relative;
+  margin: 2px 0 -5px 0;
+  background: #e74c3c;
+  color: #fceae8;
+  font-size: 10px;
+  padding: 2px;
+  border-radius: 6px;
+  user-select: none;
+  display: none;
+}
+
+
+@media (max-width: 768px) {
+  .containers .text{
+    font-size: 30px;
+  }
+  .containers form{
+    padding: 10px 0 0 0;
+  }
+  .containers form .form-row{
+    display: block;
+  }
+  form .form-row .input-data{
+    margin: 35px 0!important;
+  }
+  .submit-btn .input-data{
+    width: 100%!important;
+  }
+}
+/* ============================================= FOOTER ==================================================== */
+footer{
+  background: #111;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #fff;
+}
+.footer-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.socials{
+  display: flex;
+  margin: 1rem 0 1rem 0;
+}
+.socials a{
+  color: #fff;
+}
+.socials li{
+  position: relative;
+  display: block;
+  color: #666;
+  font-size: 30px;
+  height: 60px;
+  width: 60px;
+  background: #171515;
+  line-height: 60px;
+  border-radius: 90%;
+  margin: 0 15px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.socials li:before{
+  position: absolute;
+  content: '';
+  top: 0; left: 0;
+  height: inherit;
+  width: inherit;
+  background: #d35400; 
+  border-radius: 50%;
+  transform: scale(.9);
+  z-index: -1;
+  transition: .5s;
+}
+.socials li:nth-child(1):before{
+  background: #1DA1F2;
+}
+.socials li:nth-child(2):before{
+  background: #1DA1F2;
+}
+.socials li:nth-child(3):before{
+  background: #1DA1F2;
+}
+.socials li:hover:before{
+  filter: blur(3px);
+  transform: scale(1.2);
+  box-shadow: 0 0 15px #d35400;
+}
+.socials li:nth-child(1):hover:before{
+  box-shadow: 0 0 15px #1DA1F2;
+}
+.socials li:nth-child(2):hover:before{
+  box-shadow: 0 0 15px #1DA1F2;
+}
+.socials li:nth-child(3):hover:before{
+  box-shadow: 0 0 15px #1DA1F2;
+}
+.socials li:nth-child(1):hover{
+  color: #26a4f2;
+  box-shadow: 0 0 15px #1DA1F2;
+  text-shadow: 0 0 15px #1DA1F2#1DA1F2;
+}
+.socials li:nth-child(2):hover{
+  color: #26a4f2;
+  box-shadow: 0 0 15px #1DA1F2;
+  text-shadow: 0 0 15px #1DA1F2;
+}
+.socials li:nth-child(3):hover{
+  color: #26a4f2;
+  box-shadow: 0 0 15px #1DA1F2;
+  text-shadow: 0 0 15px #1DA1F2;
+}
+.footer-bottom{
+  background: #000;
+  width: 100vw;
+  padding: 20px 0;
+  text-align: center;
+}
+.footer-bottom p{
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+
+
+
+/* ========================================== RESPONSIVE ============================================================== */
+
+@media screen and (max-width:768px){
+
+  html{
+    font-size: 50%;
+  }
+  header .fa-bars{
+    display: block;
+  }
+  header img{
+    width: 240px;
+    padding-top: .8rem;
+  }
+  header .navbar{
+    position: fixed;
+    top: -120%; left: 0;
+    height: auto;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    z-index: 1000;
+    border-top: .1rem solid rgba(0,0,0,.3);
+  }
+  header .navbar ul{
+    width: 100%;
+    width: 100%;
+    flex-flow: column;
+  }
+  header .navbar ul li{
+    margin: 1rem 0;
+  }
+  header .navbar ul li a{
+    color: #125AAE;
+    font-size: 2.4rem;
+  }
+  header .fa-times{
+    transform: rotate(180deg);
+  }
+  header .nav-toggle{
+    top: 10rem;
+    border-bottom: .2rem solid #111;
+    border-top: .2rem solid #111;
+    background-color:'#fcfcfc';
+  }
+  .home .banner{
+    font-size: 3.7rem;
+  }
+  .home span{
+    font-size: 4rem;
+  }
+  .home .slogan{
+    font-size: 2.4rem;
+  }
+  .container{
+    width: 80%;
+    display: block;
+    margin:auto;
+    padding-top:50px;
+  }
+  .content-section{
+    float:none;
+    width:100%;
+    display: block;
+    margin:auto;
+  }
+  .image-section{
+    float:none;
+    width:100%; 
+    position: relative;
+    left: 2em; bottom: -2em;
+  }
+  .image-section img{
+    width: 80%;
+    height: auto;
+    display: block;
+    margin:auto;
+  }
+  .image-section1{
+    float:none;
+    width:100%;
+    padding: 2em; 
+  }
+  .image-section1 img{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin:auto;
+  }
+  .content-section .title{
+    text-align: center;
+    font-size: 19px;
+  }
+  .content-section .social{
+    text-align: center;
+  }
+  .cta h1{
+    font-size: 24px;
+}
+}
