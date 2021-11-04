@@ -25,7 +25,7 @@ const Navbar = () => {
       setNavbarBlur(false)
     }
   }
-  console.log(window.scrollY)
+
   if (typeof window !== "undefined") {
     window.addEventListener('scroll', changeNavbarBlur)
   }
