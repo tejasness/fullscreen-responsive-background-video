@@ -32,7 +32,7 @@ const Navbar = () => {
 
   return (
     <div className="relative">
-      <div className={navbarBlur ? "mt-0 flex backdrop-blur-lg dark:backdrop-brightness-50 backdrop-brightness-90 w-full fixed top-0 flex-1 md:px-12 px-6 py-4 md:py-4" : "mt-0 flex backdrop-blur-lg dark:backdrop-brightness-50 text-white backdrop-brightness-90 w-full fixed top-0 flex-1 md:px-12 px-6 py-4 md:py-4"}>
+      <div className={navbarBlur ? "mt-0 flex backdrop-blur-lg dark:backdrop-brightness-50 backdrop-brightness-50 w-full fixed top-0 flex-1 md:px-12 px-6 py-4 md:py-4" : "mt-0 flex backdrop-blur-lg dark:backdrop-brightness-50 text-white backdrop-brightness-50 w-full fixed top-0 flex-1 md:px-12 px-6 py-4 md:py-4"}>
         <Link href="/" passHref><div onClick={active ? handleClose : active} className={navbarBlur ? 'font-bold text-3xl -my-2 hidden sm:block hover:scale-110 transition-transform cursor-pointer' : 'font-bold text-3xl -my-2 hidden sm:block hover:scale-110 transition-transform cursor-pointer'}><img className="h-10 w-48" alt="logo" src="/homepage/logo.png" /></div></Link>
         <div className="hidden md:flex ml-10 space-x-4">
         </div>
