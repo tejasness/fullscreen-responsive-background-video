@@ -7,7 +7,6 @@ const Navbar = () => {
   const router = useRouter()
   const { theme, setTheme } = useTheme()
   const [active, setActive] = useState(false)
-  const [navbarBlur, setNavbarBlur] = useState(false)
 
   const handleClick = () => {
     setActive(true)
@@ -17,23 +16,10 @@ const Navbar = () => {
     setActive(false)
   }
 
-  const changeNavbarBlur = () => {
-    if (window.scrollY > 630) {
-      setNavbarBlur(true)
-    }
-    else {
-      setNavbarBlur(false)
-    }
-  }
-
-  if (typeof window !== "undefined") {
-    window.addEventListener('scroll', changeNavbarBlur)
-  }
-
   return (
     <div className="relative">
-      <div className={navbarBlur ? "mt-0 flex backdrop-blur-lg dark:backdrop-brightness-50 backdrop-brightness-50 w-full fixed top-0 flex-1 md:px-12 px-6 py-4 md:py-4" : "mt-0 flex backdrop-blur-lg dark:backdrop-brightness-50 text-white backdrop-brightness-50 w-full fixed top-0 flex-1 md:px-12 px-6 py-4 md:py-4"}>
-        <Link href="/" passHref><div onClick={active ? handleClose : active} className={navbarBlur ? 'font-bold text-3xl -my-2 hidden sm:block hover:scale-110 transition-transform cursor-pointer' : 'font-bold text-3xl -my-2 hidden sm:block hover:scale-110 transition-transform cursor-pointer'}>jrwjjrw</div></Link>
+      <div className="mt-0 flex bg-white dark:bg-black w-full fixed top-0 flex-1 md:px-12 px-6 py-4 md:py-4">
+        <Link href="/" passHref><div onClick={active ? handleClose : active} className="font-bold text-3xl -my-2 hidden sm:block hover:scale-110 transition-transform cursor-pointer">jrwjjrw</div></Link>
         <div className="hidden md:flex ml-10 space-x-4">
         </div>
 
@@ -54,7 +40,7 @@ const Navbar = () => {
         </div>
 
         <div className="mx-auto">
-          <Link href="/" passHref><div onClick={active ? handleClose : active} className={navbarBlur ? 'font-bold text-3xl -my-2 hover:scale-110 sm:hidden transition-transform cursor-pointer' : 'font-bold text-3xl -my-2 hover:scale-110 transition-transform sm:hidden cursor-pointer'}>jrwjjrw</div></Link>
+          <Link href="/" passHref><div onClick={active ? handleClose : active} className="font-bold text-3xl -my-2 hover:scale-110 transition-transform sm:hidden cursor-pointer">jrwjjrw</div></Link>
         </div>
         <div className="sm:mr-0 sm:ml-4 md:ml-6" onClick={active ? handleClose : null}>
           {theme == 'light' && <button onClick={() => setTheme('dark')}>
