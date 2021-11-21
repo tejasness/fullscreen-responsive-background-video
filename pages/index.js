@@ -23,7 +23,6 @@ export default function Home() {
             <div className="text-5xl font-thin my-56 mx-16 text-center text-white">
               We aim to help robotics enthusiasts and beginners to master their skills in robotics
             </div>
-            <div className="text-2xl font-light">Join our community</div>
           </div>
         </div>
 
