@@ -20,7 +20,7 @@ export default function Home() {
           </video>
           <div className="absolute inset-0">
             <Navbar />
-            <div className="text-4xl font-thin my-56 mx-16 text-center text-white">
+            <div className="text-5xl font-thin my-56 mx-16 text-center text-white">
               We aim to help robotics enthusiasts and beginners to master their skills in robotics
             </div>
             <div className="text-2xl font-light">Join our community</div>
