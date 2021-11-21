@@ -18,7 +18,7 @@ const Navbar = () => {
 
   return (
     <div className="relative">
-      <div className="mt-0 flex bg-white dark:bg-black w-full fixed top-0 flex-1 md:px-12 px-6 py-4 md:py-4">
+      <div className="mt-0 flex bg-white dark:bg-gray-900 w-full fixed top-0 flex-1 md:px-12 px-6 py-4 md:py-4">
         <Link href="/" passHref><div onClick={active ? handleClose : active} className="font-bold text-3xl -my-2 hidden sm:block hover:scale-110 transition-transform cursor-pointer">jrwjjrw</div></Link>
         <div className="hidden md:flex ml-10 space-x-4">
         </div>
